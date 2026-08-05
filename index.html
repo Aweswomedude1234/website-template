@@ -1,84 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My First Website</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- STEP 1: Change the title. This is the text on the browser tab. -->
+  <title>PUT YOUR NAME HERE</title>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- =============================================== -->
-  <!-- CHANGE THE NAME BELOW TO YOUR NAME              -->
-  <!-- =============================================== -->
-  <h1>Your Name Here</h1>
+<!-- ===================================================================
+     THIS PAGE IS EMPTY ON PURPOSE. YOU ARE GOING TO BUILD IT.
 
-  <!-- =============================================== -->
-  <!-- WRITE A SENTENCE ABOUT YOURSELF                 -->
-  <!-- =============================================== -->
-  <p>Welcome to my website! I am learning to code today.</p>
+     HOW THIS WORKS
+     Everything below is a set of instructions written in comments.
+     A comment is text the browser ignores. It is only a note to you.
+     Comments start with     <!- -     and end with     - ->
 
+     Under each instruction, type the HTML that it asks for.
+     Use the class names EXACTLY as written. The class names are what
+     connect your HTML to the style file, and the style file is what
+     makes your site look finished.
 
-  <!-- =============================================== -->
-  <!-- ABOUT ME SECTION                                -->
-  <!-- Change these to facts about you!                -->
-  <!-- =============================================== -->
-  <h2>About Me</h2>
-  <ul>
-    <li>I am in grade: CHANGE THIS</li>
-    <li>My favorite food is: CHANGE THIS</li>
-    <li>My favorite game is: CHANGE THIS</li>
-    <li>If I could have any superpower it would be: CHANGE THIS</li>
-  </ul>
+     A TAG:              <h1>Hello</h1>
+                          ^open      ^close
+
+     A TAG WITH A CLASS: <div class="card">Hello</div>
+
+     Save the file, then refresh your browser to see your changes.
+     =================================================================== -->
 
 
-  <!-- =============================================== -->
-  <!-- HOBBIES SECTION                                 -->
-  <!-- Add or remove hobbies. Make them yours!         -->
-  <!-- =============================================== -->
-  <h2>My Hobbies</h2>
-  <ul>
-    <li>Hobby one</li>
-    <li>Hobby two</li>
-    <li>Hobby three</li>
-  </ul>
+<!-- ===================================================================
+     STEP 2: THE NAVIGATION BAR (the menu that sticks to the top)
+
+     Build a <nav> with class="nav". Inside it put:
+       1. A <div class="logo"> with your first name or initials
+       2. Three links: <a href="#about">About</a>
+                       <a href="#hobbies">Hobbies</a>
+                       <a href="#links">Links</a>
+       3. A button:    <button class="theme-btn" onclick="switchTheme()">Dark</button>
+
+     The # in a link means "jump to the part of this page that has
+     that id". You will add those ids in the steps below.
+     =================================================================== -->
+
+<!-- YOUR NAV GOES HERE -->
 
 
-  <!-- =============================================== -->
-  <!-- COLORED BOX                                     -->
-  <!-- Try changing the color name! Try: red, blue,    -->
-  <!-- hotpink, gold, lime, tomato, plum, skyblue      -->
-  <!-- =============================================== -->
-  <h2>My Favorite Color</h2>
-  <div style="background-color: yellow; padding: 20px;">
-    <p>This box is my favorite color. Change yellow to anything you want!</p>
-  </div>
+
+<!-- ===================================================================
+     STEP 3: THE HERO (the large area at the top with your name)
+
+     Build a <header class="hero">. Inside it put a <div class="wrap">,
+     and inside that put:
+       1. <div class="eyebrow fade-in">        a short label, like STUDENT
+       2. <h1 class="fade-in delay-1">         your full name
+       3. <p class="tagline fade-in delay-2">  one sentence about you
+       4. <div class="fade-in delay-3">        holding two buttons:
+             <a href="#about" class="btn">About Me</a>
+             <a href="#links" class="btn btn-ghost">My Links</a>
+
+     "fade-in" makes something appear smoothly when the page loads.
+     "delay-1" makes it wait its turn so they appear one after another.
+     =================================================================== -->
+
+<!-- YOUR HERO GOES HERE -->
 
 
-  <!-- =============================================== -->
-  <!-- BIG BOLD QUOTE                                  -->
-  <!-- Write something you believe in                  -->
-  <!-- =============================================== -->
-  <h2>My Quote</h2>
-  <p style="font-size: 24px; font-style: italic;">
-    "Replace this with a quote you like!"
-  </p>
+
+<!-- ===================================================================
+     STEP 4: THE ABOUT SECTION
+
+     Build a <section class="section" id="about"> with a
+     <div class="wrap"> inside it. The id="about" is what makes the
+     nav link from Step 2 work.
+
+     Inside the wrap:
+       1. <h2 class="reveal">About</h2>
+       2. <p class="sub reveal">      a short grey line under the heading
+       3. <div class="card card-wide reveal"> containing a <p> with two
+          or three sentences about yourself
+
+     "reveal" makes something fade up when you scroll to it. You can
+     put it on almost anything.
+     =================================================================== -->
+
+<!-- YOUR ABOUT SECTION GOES HERE -->
 
 
-  <!-- =============================================== -->
-  <!-- LINK TO A WEBSITE YOU LIKE                      -->
-  <!-- Change the URL and the text                     -->
-  <!-- =============================================== -->
-  <h2>Cool Links</h2>
-  <p>
-    Check out my favorite website:
-    <a href="https://scratch.mit.edu">Scratch</a>
-  </p>
+
+<!-- ===================================================================
+     STEP 5: THE FACTS GRID (boxes side by side)
+
+     Build another <section class="section"> with a <div class="wrap">.
+     Inside:
+       1. <h2 class="reveal">Quick Facts</h2>
+       2. <div class="grid">  and inside the grid, four of these:
+
+            <div class="card reveal">
+              <h3>Grade</h3>
+              <p>7th</p>
+            </div>
+
+     Make one card each for your grade, your favourite food, your
+     favourite game, and the superpower you would pick.
+
+     TIP: write ONE card, check that it works, THEN copy and paste it
+     three times and change the words.
+     =================================================================== -->
+
+<!-- YOUR FACTS GRID GOES HERE -->
 
 
-  <!-- =============================================== -->
-  <!-- FOOTER                                          -->
-  <!-- =============================================== -->
-  <hr>
-  <p>Made by me at Coding Camp!</p>
+
+<!-- ===================================================================
+     STEP 6: THE HOBBIES SECTION
+
+     Build a <section class="section" id="hobbies"> with a
+     <div class="wrap"> inside.
+     Inside:
+       1. <h2 class="reveal">Interests</h2>
+       2. <div class="tags reveal">  and inside it, as many of these
+          as you want:
+
+            <span class="tag">Soccer</span>
+
+     Add at least five. Then put your mouse over them.
+     =================================================================== -->
+
+<!-- YOUR HOBBIES SECTION GOES HERE -->
+
+
+
+<!-- ===================================================================
+     STEP 7: THE QUOTE
+
+     Build a <section class="section"> with a <div class="wrap">.
+     Inside it put:
+
+       <blockquote class="quote reveal">
+         Your favourite quote goes here.
+         <span>Who said it</span>
+       </blockquote>
+
+     It can be from a movie, a song, a book, or you can write your own.
+     =================================================================== -->
+
+<!-- YOUR QUOTE GOES HERE -->
+
+
+
+<!-- ===================================================================
+     STEP 8: THE LINKS SECTION
+
+     Build a <section class="section" id="links"> with a
+     <div class="wrap"> inside.
+     Inside:
+       1. <h2 class="reveal">Links</h2>
+       2. <p class="sub reveal">   a line saying these are sites you like
+       3. <div class="grid">  with three cards. This time make each
+          card a LINK instead of a div:
+
+            <a href="https://scratch.mit.edu" class="card reveal">
+              <h3>Coding</h3>
+              <p>Scratch</p>
+            </a>
+
+     Every href must start with https:// or the link will not work.
+     =================================================================== -->
+
+<!-- YOUR LINKS SECTION GOES HERE -->
+
+
+
+<!-- ===================================================================
+     STEP 9: THE FOOTER (the very bottom of the page)
+
+     Build a <footer class="footer"> with a <div class="wrap"> inside.
+     Inside that put:
+
+       <p>Built by YOUR NAME</p>
+       <p>My first website, written from an empty file.</p>
+     =================================================================== -->
+
+<!-- YOUR FOOTER GOES HERE -->
+
+
+
+<!-- ===================================================================
+     STEP 10: TURN ON THE JAVASCRIPT
+
+     This one line switches on the dark mode button and the scroll
+     animations. It must be the LAST thing before </body>.
+
+     Uncomment the line below by deleting the <!- - at the start and
+     the - -> at the end.
+     =================================================================== -->
+
+<!-- <script src="script.js"></script> -->
 
 </body>
 </html>

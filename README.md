@@ -1,69 +1,103 @@
-# Website Template
+# Build Your Own Website
 
-A simple, fun website template for kids to create their first website!
+You are going to write a real website today. Not fill in a worksheet, but
+actually type the code, starting from an empty file, and publish it on the
+internet.
 
-## Quick Start Guide
+It takes about 90 minutes and you do not need any experience.
 
-### Step 1: Fork This Repository
-Click the "Fork" button in the top right corner of this page to make your own copy.
+## What is in this folder
 
-### Step 2: Edit Your Files
-In your forked repository, click on the files to edit them:
-- Change "Your Name Here" in index.html
-- Write about yourself in the "About Me" section
-- Add your hobbies and favorite things
-- Change colors and styles in style.css
+| File | What it is |
+|---|---|
+| `index.html` | This is the one you write. It is nearly empty and full of numbered instructions. |
+| `style.css` | The appearance of the site. Already written for you. |
+| `script.js` | The dark mode button and the scroll animation. Already written for you. |
 
-### Step 3: Set Up GitHub Pages
-1. Go to your repository settings (click "Settings" at the top)
-2. Scroll down to the "Pages" section on the left menu
-3. Under "Source", select "main" as your branch
-4. Click "Save"
-5. GitHub will show you a link to your website
+## How to start
 
-### Step 4: Share Your Website
-Your website will be live at: https://YOUR_USERNAME.github.io/website-template
+1. Fork this repository using the Fork button at the top right of this page.
+2. Open `index.html` in a text editor and in a browser at the same time.
+3. Start at STEP 1 and work down. Each step tells you exactly what to build.
+4. Save the file and refresh the browser every time you want to see a change.
 
-Copy this link and share it with friends and family!
+## The one idea you need
 
-## Tips for Customizing
+The design is already finished and sitting in `style.css`, waiting for you.
 
-- Change colors in style.css by replacing color names like "gold" or "yellow"
-- Try these fun colors: hotpink, lime, tomato, plum, skyblue, coral, orange, purple
-- Edit the text in index.html to add more about yourself
-- Add new sections by copying and pasting the HTML patterns
+The moment you type this in your HTML:
 
----
+```html
+<div class="card">Pizza</div>
+```
 
-## 🤖 Want to Learn About AI/LLMs?
+you get a box with a border, rounded corners, padding, and an effect when you
+hover over it. You did not have to design any of it.
 
-We've also included a complete **LLM Training Template** in the `llm-training-template/` folder!
+Your job is to know the class names. Here they are.
 
-This is perfect if you want to learn:
-- How language models work
-- How to train your own AI model
-- Machine learning basics
-- Python programming
+| Class | What it gives you |
+|---|---|
+| `nav` | The menu bar that sticks to the top |
+| `logo` | Your name inside the nav bar |
+| `theme-btn` | The dark mode button |
+| `hero` | The large area at the top with your name |
+| `eyebrow` | The small label above your name |
+| `tagline` | The sentence under your name |
+| `wrap` | Keeps content lined up in a neat column |
+| `btn` | A filled button |
+| `btn btn-ghost` | An outlined button |
+| `section` | A chunk of the page with proper spacing |
+| `sub` | The short grey line under a heading |
+| `grid` | Puts boxes side by side, and stacks them on a phone |
+| `card` | A box with a border and a hover effect |
+| `card card-wide` | A wider card for a paragraph of writing |
+| `tags` and `tag` | Small rounded labels |
+| `quote` | The quote block |
+| `footer` | The bottom of the page |
+| `reveal` | Fades up when you scroll to it. Put it on almost anything. |
+| `fade-in` | Fades up when the page loads |
+| `delay-1` `delay-2` `delay-3` | Makes a fade-in wait its turn |
 
-### Quick Start for LLM Training
+Spell them exactly. `card` works. `Card` and `cards` do nothing.
 
-1. Go to the `llm-training-template/` folder
-2. Read `GETTING_STARTED.md` (beginner-friendly guide)
-3. Follow 4 simple steps to train your own language model!
+## When something breaks
 
-No AI experience needed! The template teaches you everything.
+| What you see | What is wrong |
+|---|---|
+| The page looks plain and unstyled | A class name is misspelled, or the quotes around it are missing |
+| Part of the page vanished | A closing tag is missing, usually a `</div>` |
+| Nothing animates and the button does nothing | STEP 10, your `<script>` tag is still commented out |
+| A nav link does not jump anywhere | The section is missing its `id`, or the id is spelled differently |
+| Nothing changed at all | You did not save the file, or you did not refresh the page |
 
-### What You'll Learn
+Breaking your page is a normal part of writing code. Press Ctrl and Z to undo
+your last change and try again.
 
-- How to prepare text data
-- How to build a neural network
-- How to train it on your data
-- How to generate text with your model
+## Put it on the internet
 
-### Requirements
+1. In your repository, click **Settings**.
+2. Click **Pages** in the left menu.
+3. Under Source, choose branch `main` and folder `/ (root)`.
+4. Click **Save** and wait about a minute.
 
-- Python 3.8+
-- A text editor
-- Text data (books, Wikipedia, or your own writing)
+Your site will be live at:
 
-[See full LLM Training Guide →](llm-training-template/)
+```
+https://YOUR-USERNAME.github.io/website-template
+```
+
+## Want to go further
+
+- Open `style.css` and change `--accent` at the very top. Look for the other
+  notes marked TRY CHANGING THIS.
+- Add more cards, more interests, or a whole new section by copying one you have
+  already written.
+- In `script.js`, uncomment the `surprise()` function, then add
+  `onclick="surprise()"` to your `<h1>` and click your own name.
+
+## Want to learn about AI instead
+
+There is a complete LLM training template in the
+[`llm-training-template/`](llm-training-template/) folder for training your own
+small language model in Python. Start with its `GETTING_STARTED.md`.
