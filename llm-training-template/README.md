@@ -368,6 +368,29 @@ llm-training-template/
 
 ---
 
+## 🚀 Deploy Your Project Page
+
+### GitHub Pages (⭐ Free & Easy)
+
+Deploy your project showcase to GitHub Pages - completely free!
+
+```bash
+git push origin main
+# Then enable Pages in repo settings
+# Your site: https://YOUR_USERNAME.github.io/website-template/
+```
+
+**That's it!** No accounts, no payment, instant hosting.
+
+### Run Locally Anytime
+```bash
+python inference.py --prompt "Your text"
+```
+
+**See DEPLOYMENT.md for complete guide!**
+
+---
+
 ## Next Steps
 
 After mastering this template:

@@ -66,4 +66,19 @@ No AI experience needed! The template teaches you everything.
 - A text editor
 - Text data (books, Wikipedia, or your own writing)
 
+### Deployment (Showcase Your Project)
+Share your work on **GitHub Pages** - completely free!
+
+```bash
+# Push to GitHub
+git push origin main
+
+# Enable Pages in repo settings
+# Your site: https://YOUR_USERNAME.github.io/website-template/
+```
+
+No payment, no accounts, no complexity!
+
+**[See full deployment guide →](llm-training-template/DEPLOYMENT.md)**
+
 [See full LLM Training Guide →](llm-training-template/)

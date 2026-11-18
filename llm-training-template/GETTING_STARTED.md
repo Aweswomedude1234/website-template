@@ -446,7 +446,7 @@ Try different values and see what you like!
 ### Complete Workflow
 
 ```bash
-# 1. Prepare data (one-time)
+# 1. Prepare data
 python dataset_preparation.py
 
 # 2. Train model
@@ -455,11 +455,15 @@ python train.py --epochs 20
 # 3. Evaluate
 python evaluate.py
 
-# 4. Benchmark against ChatGPT/Claude
+# 4. Benchmark vs ChatGPT/Claude
 python benchmark.py
 
 # 5. Generate text
-python inference.py --prompt "Your prompt here"
+python inference.py --prompt "Your prompt"
+
+# 6. Deploy (push to GitHub)
+git push origin main
+# Then enable GitHub Pages in repo settings
 ```
 
 ### File Structure
@@ -562,4 +566,29 @@ After you complete this template:
 
 ---
 
-Good luck! 🚀 You're about to train your first LLM!
+---
+
+## 🚀 Next: Deploy Your Project
+
+### Option A: Run Locally (Always Available!)
+```bash
+python inference.py --prompt "Once upon a time"
+```
+Works immediately - **completely free, no accounts!**
+
+### Option B: GitHub Pages (Showcase Your Project)
+```bash
+# Push to GitHub
+git push origin main
+
+# Enable Pages in repo settings
+# Your site: https://YOUR_USERNAME.github.io/website-template/
+```
+
+**Completely free, no signup, auto-deployed!**
+
+See **DEPLOYMENT.md** for complete step-by-step guide!
+
+---
+
+Good luck! 🚀 You're about to train and deploy your first LLM!

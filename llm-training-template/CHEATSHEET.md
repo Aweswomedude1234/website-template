@@ -258,6 +258,23 @@ python train.py --epochs 5 --learning_rate 0.01
 # Don't use this.
 ```
 
+## Deployment
+
+### Run Locally (NO Account Needed!)
+```bash
+python inference.py --prompt "Your prompt"
+# Works immediately, completely free!
+```
+
+### Deploy Project Page to GitHub Pages
+
+1. Push code to GitHub
+2. Go to repo Settings → Pages
+3. Set source to `main` branch
+4. Your site: https://YOUR_USERNAME.github.io/website-template/llm-training-template/
+
+That's it! No signup, no payment, completely free!
+
 ---
 
-**Happy training!** 🚀
+**Happy training & deploying!** 🚀
